@@ -3,6 +3,19 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+
+  build: {
+    // https://go.nuxtjs.dev/config-build
+    loaders: {
+      sass: {
+        implementation: require('sass'),
+      },
+      scss: {
+        implementation: require('sass'),
+      },
+    }
+  },
+
   // Global App headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Steve Mbiele',
@@ -30,5 +43,6 @@ export default {
   modules: [],
   alias: {
     'models': resolve(__dirname, './models'),
-  }
+  },
+  css: ['@/assets/scss/main.scss']
 };

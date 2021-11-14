@@ -45,7 +45,7 @@ export default {
             },
             {
               id: "2",
-              text: "mplemented a new file system to go along with GIT"
+              text: "Implemented a new file system to go along with GIT"
             }
           ],
         },

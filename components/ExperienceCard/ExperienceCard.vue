@@ -8,10 +8,9 @@
         <div class="card-body">
         <slot>
             <h5 class="job-title">{{ experience.title }}</h5>
-            <p class="company">{{experience.company}}</p>
-            <p class="location">{{ experience.location }}</p>
+            <p class="company-location">{{experience.company}}, {{ experience.location }}</p>
             <ul class="experience-list">
-                <li v-for="description in experience.descriptions"
+                <li class = "experience-item" v-for="description in experience.descriptions"
                 :key="description.id">{{ description.text }}</li>
             </ul>
         </slot>
@@ -19,5 +18,5 @@
     </div>
 </template>
 
-<script src="./ExperienceCard.js"></script>
-<style src="./ExperienceCard.css"></style>
+<script src="./ExperienceCard.js"/>
+<style src="./ExperienceCard.scss" lang="scss" scoped/>
