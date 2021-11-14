@@ -1,25 +1,25 @@
 .card {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    width:  80%;
-    max-width: 600px;
+    width: 80%;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
-    background-color: #023e8a;
-    color: #caf0f8;
+    background-color: #5941A9;
+    color: #E5D4ED;
     text-align: center;
     padding: 2em;
     margin: 2em auto;
     border-radius: 1%;
-    border: 4px solid #caf0f8;
+    border: 4px solid #E5D4ED;
 }
 
 .experience-list {
     margin: 0;
-    padding: 0 ;
+    padding: 0;
 }
 
 .experience-item {
-    margin: 0;
+    margin: 0 0 1.3em 0;
     padding: 0;
     text-align: left;
     justify-content: center;
@@ -29,7 +29,70 @@
 .job-title {
     font-size: 1.5em;
     font-weight: bold;
+    letter-spacing: 1px;
     line-height: 1.1;
     margin: 0;
     padding: 0;
+    text-transform: capitalize;
+}
+
+.job-title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #E5D4ED;
+    margin: 1em 0;
+    opacity: 0.45;
+}
+
+.card-header {
+    letter-spacing: 1px;
+    line-height: 1.1;
+    margin: 0;
+    padding: 0;
+}
+
+.experience-date {
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0 0 1em 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.company-location {
+    letter-spacing: 1px;
+    margin: 0 0 2em 0;
+    padding: 0;
+}
+
+.card-body {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+@media (min-width: 700px) {
+    .card {
+        flex-direction: row;
+    }
+
+    .experience-date {
+        justify-content: center;
+        margin-right: 2em;
+    }
+
+    .card-header {
+        letter-spacing: 1px;
+        line-height: 1.1;
+        margin: 0;
+        padding: 0 0.35rem 0 0.25rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
 }

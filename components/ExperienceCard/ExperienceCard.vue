@@ -2,7 +2,7 @@
     <div class="card">
         <div class="card-header">
         <slot name="header">
-            <h3>{{ experience.from }}  -  {{ experience.to}}</h3>
+            <h3 class="experience-date">{{ experience.from }}  -  {{ experience.to}}</h3>
         </slot>
         </div>
         <div class="card-body">
