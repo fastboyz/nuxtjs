@@ -1,9 +1,19 @@
 <template>
   <main id="app">
     <section class="cards">
-      <ExperienceCard  v-for="experience in experiences"
-      :key="experience.id"
-      :experience="experience"/>
+      <div class="resume-header">
+        <div class="experience-title-div">
+          <h1 class="experience-title">Work Experience</h1>
+        </div>
+        <div class="button-div">
+          <a href="#" class="button">Download Resume</a>
+        </div>
+      </div>
+      <ExperienceCard
+        v-for="experience in experiences"
+        :key="experience.id"
+        :experience="experience"
+      />
     </section>
   </main>
 </template>
@@ -23,12 +33,12 @@ export default {
           descriptions: [
             {
               id: "1",
-              text: "Gathered and defined customer requirements to develop clear specifications for project plans"
+              text: "Gathered and defined customer requirements to develop clear specifications for project plans",
             },
             {
               id: "2",
-              text: "Introduced a Feature flag management system, greatly reducing the time spent during deployments"
-            }
+              text: "Introduced a Feature flag management system, greatly reducing the time spent during deployments",
+            },
           ],
         },
         {
@@ -41,12 +51,12 @@ export default {
           descriptions: [
             {
               id: "1",
-              text: "Boosted the Equisoft Manage competitiveness by pioneering GIT as a source control management tool with OIPA"
+              text: "Boosted the Equisoft Manage competitiveness by pioneering GIT as a source control management tool with OIPA",
             },
             {
               id: "2",
-              text: "Implemented a new file system to go along with GIT"
-            }
+              text: "Implemented a new file system to go along with GIT",
+            },
           ],
         },
       ],
